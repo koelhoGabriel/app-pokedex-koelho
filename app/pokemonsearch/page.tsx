@@ -41,14 +41,24 @@ const PokemonSearch: React.FC = () => {
     }
   };
 
+  const handleClear = () => {
+    setQuery('');
+  };
+
+  const handleSubmit = () => {
+    searchPokemon();
+  };
+
   return (
     <div>
       <SearchInput
         value={query}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
+        onClear={handleClear}
+        onSubmit={handleSubmit}
         disabled={loading}
-        previousValue={previousQuery} // Passando o valor da consulta anterior para o componente SearchInput
+        previousValue={previousQuery}
       />
       {loading && <Loader />}
       {error && <ErrorState message={error} />}
