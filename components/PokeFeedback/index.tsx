@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './pokefeedback.module.scss';
 
 interface MessageState {
-  type: keyof typeof defaultMessages,
+  type: 'empty' | 'error' | 'loading'; //keyof typeof defaultMessages,
   message?: string;
 }
 

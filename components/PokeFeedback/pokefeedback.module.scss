@@ -1,7 +1,13 @@
+@import '../../styles/mixins/breakpoints.scss';
+
 .wrapper {
     display: block;
     padding: 2rem;
     text-align: center;
+
+    @include breakpoint(tablet) {
+        padding: 5rem;
+    }
 }
 
 .title {

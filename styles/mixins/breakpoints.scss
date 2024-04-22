@@ -20,9 +20,8 @@ $breakpoints: (
     }
   }
 }
-
-body:before {
-  display: none;
+/* 
+.page_pokedex:before {
   content: 'mobile';
 
   @include breakpoint(mobile-m) {
@@ -52,4 +51,4 @@ body:before {
   @include breakpoint(desktop-xl) {
     content: 'desktop-xl';
   }
-}
+} */
