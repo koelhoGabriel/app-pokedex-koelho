@@ -3,7 +3,7 @@
     padding: 2rem;
     box-shadow: 1px 1px 5px gray;
     width: 100%;
-    max-width: 768px;
+    max-width: var(--tablet);
     margin: 0 auto;
 
     .card__header {

@@ -20,35 +20,3 @@ $breakpoints: (
     }
   }
 }
-/* 
-.page_pokedex:before {
-  content: 'mobile';
-
-  @include breakpoint(mobile-m) {
-    content: 'mobile-m';
-  }
-
-  @include breakpoint(mobile-l) {
-    content: 'mobile-l';
-  }
-
-  @include breakpoint(tablet) {
-    content: 'tablet';
-  }
-
-  @include breakpoint(desktop) {
-    content: 'desktop';
-  }
-
-  @include breakpoint(desktop-m) {
-    content: 'desktop-m';
-  }
-
-  @include breakpoint(desktop-l) {
-    content: 'desktop-l';
-  }
-
-  @include breakpoint(desktop-xl) {
-    content: 'desktop-xl';
-  }
-} */

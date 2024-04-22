@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from 'next/font/google'
 import '../styles/reset.scss'
 import '../styles/main.scss'
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Pokedex - Gabriel Oliveira",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} page_pokedex`}>{children}</body>
+      <body className={`${roboto.className} page_pokedex`}>{children}</body>
     </html>
   );
 }

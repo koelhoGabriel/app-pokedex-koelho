@@ -6,7 +6,7 @@ const PokeFooter: React.FC = () => {
 
   return (
     <footer className={styles.poke__footer}>
-      <div className='container'><span>{currentYear} All rights reserved</span></div>
+      <div className='container'><span>{currentYear} - Todos os direitos não reservados</span></div>
     </footer>
   );
 };
