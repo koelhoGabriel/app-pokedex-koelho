@@ -1,11 +1,14 @@
 import React from 'react';
-import PokemonSearch from '../components/PokemonSearch';
+import PokemonSearch from '@/components/PokemonSearch';
+import PokeHeader from '@/components/PokeHeader';
+import PokeFooter from '@/components/PokeFooter';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Pokémon Search</h1>
+    <div className='pokedex__wrapper'>
+      <PokeHeader />
       <PokemonSearch />
+      <PokeFooter />
     </div>
   );
 };

@@ -1,5 +1,10 @@
 import React from 'react';
 
+import styles from './SearchInput.module.scss'
+import { FaSearch } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
+
+
 interface SearchInputProps {
   value: string;
   onChange: (value: string) => void;
@@ -27,16 +32,17 @@ const SearchInput: React.FC<SearchInputProps> = ({
   };
 
   return (
-    <div>
-      <input
+    <div className={styles.input__wrapper}>
+      <input 
+        className={styles.input__control}
         type="text"
         value={value}
         onChange={handleInputChange}
         onKeyPress={onKeyPress}
         disabled={disabled}
       />
-      <button onClick={onSubmit} disabled={disabled}>Enviar</button>
-      <button onClick={onClear} disabled={disabled}>Limpar</button>
+      <button className={styles.input__button} onClick={onSubmit} disabled={disabled}><FaSearch /></button>
+      <button className={styles.input__button} onClick={onClear} disabled={disabled}><FaXmark /></button>
     </div>
   );
 };
