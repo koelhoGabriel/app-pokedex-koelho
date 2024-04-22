@@ -1,0 +1,10 @@
+.pokesearch__wrapper {
+    padding: 2rem 0;
+    min-height: calc(100vh - 160px);
+}
+
+.pokesearch__container {
+    display: grid;
+    gap: 0 1rem;
+    grid-template-columns: auto max-content max-content;
+}
