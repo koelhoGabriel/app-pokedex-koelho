@@ -1,4 +1,16 @@
 .poke__header {
-    background-color: gray;
+    background-color: #ff6e6e;
     padding: 1rem;
+}
+
+.poke__logo {
+    display: flex;
+    gap: 0 0.5rem;
+    align-items: center;
+    font-weight: bold;
+    font-weight: 1.5rem;
+
+    span {
+        color: white;
+    }
 }

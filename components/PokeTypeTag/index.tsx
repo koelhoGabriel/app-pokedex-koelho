@@ -10,7 +10,7 @@ interface PokemonTypeTagProps {
 const PokeTypeTag: React.FC<PokemonTypeTagProps> = ({ tags }) => {
   return (
     <ul className={styles.tags__list}>
-      {tags.map((type, index) => <li className={`type ${type.type.name} ${styles.tags__item}`} key={index}>{capitalizeFirstLetter(type.type.name)} </li>)}
+      {tags.map((type, index) => <li className={`${styles.tags__item} ${type.type.name}`} key={index}>{capitalizeFirstLetter(type.type.name)} </li>)}
     </ul>
   )
 };

@@ -26,9 +26,9 @@ const mapStatusLabel = (statusName: string): string => {
 
 const PokemonCard: React.FC<Pokemon> = ({ id, types, name, sprites, stats }) => {
   return (
-    <div className={`${styles.card} ${types[0].type.name}`}>
+    <div className={`${styles.card}`}>
       <div className={styles.card__header}>
-        <h2>#{id} {capitalizeFirstLetter(name)} - <PokemonTypeTag tags={types} /></h2>
+        <h2 className={styles.card__title}>#{id} {capitalizeFirstLetter(name)} - <PokemonTypeTag tags={types} /></h2>
       </div>
       <div className={styles.card__body}>
         <div className={styles.card__image}>

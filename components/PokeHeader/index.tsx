@@ -6,7 +6,10 @@ const PokeHeader: React.FC = () => {
   return (
   <header className={style.poke__header}>
     <div className='container'>
-        <Image alt="pokedex logo" src="/small-logo.png" width="130" height="48" />
+      <h1 className={style.poke__logo}>
+        <Image alt="pokedex logo" src="/pokeball.svg" width="50" height="50" />
+        <span>POKEDÉX</span>
+      </h1>
     </div>
   </header>
   )

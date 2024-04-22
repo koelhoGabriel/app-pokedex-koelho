@@ -26,7 +26,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
 }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
-    if (newValue !== previousValue || newValue === '') { // Verifica se o valor é diferente do valor anterior ou se está vazio
+    if (newValue !== previousValue || newValue === '') {
       onChange(newValue);
     }
   };

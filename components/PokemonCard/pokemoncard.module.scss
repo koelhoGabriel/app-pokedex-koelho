@@ -6,77 +6,6 @@
     max-width: 768px;
     margin: 0 auto;
 
-    &:global(.normal) {
-        background-color: var(--normal);
-    }
-
-    &:global(.fighting) {
-        background-color: var(--fighting);
-    }
-
-    &:global(.flying) {
-        background-color: var(--flying);
-    }
-
-    &:global(.poison) {
-        background-color: var(--poison);
-    }
-
-    &:global(.ground) {
-        background-color: var(--ground);
-    }
-
-    &:global(.rock) {
-        background-color: var(--rock);
-    }
-
-    &:global(.bug) {
-        background-color: var(--bug);
-    }
-
-    &:global(.ghost) {
-        background-color: var(--ghost);
-    }
-
-    &:global(.steel) {
-        background-color: var(--steel);
-    }
-
-    &:global(.fire) {
-        background-color: var(--fire);
-    }
-
-    &:global(.water) {
-        background-color: var(--water);
-    }
-
-    &:global(.grass) {
-        background-color: var(--grass);
-    }
-
-    &:global(.electric) {
-        background-color: var(--electric);
-    }
-
-    &:global(.psychic) {
-        background-color: var(--psychic);
-    }
-
-    &:global(.ice) {
-        background-color: var(--ice);
-    }
-
-    &:global(.dragon) {
-        background-color: var(--dragon);
-    }
-
-    &:global(.dark) {
-        background-color: var(--dark);
-    }
-
-    &:global(.fairy) {
-        background-color: var(--fairy);
-    }
     .card__header {
         font-weight: bold;
         font-size: 1.4rem;
@@ -87,6 +16,17 @@
             text-align: left;
         }
         
+        .card__title {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem 0;
+            align-items: center;
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                gap: 0 1rem;
+            }
+        }
     }
 
     .card__body {
